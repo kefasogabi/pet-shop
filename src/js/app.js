@@ -29,7 +29,7 @@ App = {
       if(typeof web3 !== 'undefined'){
         App.web3Provider = web3.currentProvider;
       } else{
-        App.web3Provider = new Web3.providers.HttpProvider("http://localhost:8545");
+        App.web3Provider = new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/f44fd2329f7c4f899327c6cef2db6971");
         web3 = new Web3(App.web3Provider);
       }
     return App.initContract();

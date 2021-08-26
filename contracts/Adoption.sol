@@ -5,7 +5,7 @@ contract Adoption {
   address[16] public adopters;
 
 
-  function getAdopters() public returns(address[16] memory){
+  function getAdopters() public view returns(address[16] memory){
     return adopters;
   }
 
